@@ -3,7 +3,9 @@ import { Switch, Route, withRouter } from 'react-router-dom';
 
 
 import Category from '../components/Category';
+
 import Playlists from "./Playlists";
+
 
 import { checkAndReturnToken } from '../utils';
 
@@ -67,6 +69,7 @@ class Categories extends React.Component {
             categoriesSection = (
                 console.log('Loading')
             );
+
         } else if (this.state.categories && this.state.categories.length > 0) {
             categoriesSection =  this.state.categories
                 .map(category => {
@@ -82,7 +85,7 @@ class Categories extends React.Component {
                     )
                 });
         } else {
-            categoriesSection = 'Nicio categorie gasita.';
+            categoriesSection = 'No categories. We will be back soon';
         }
 
         return (

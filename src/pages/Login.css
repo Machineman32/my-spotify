@@ -2,18 +2,18 @@
     background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
     display: flex;
     width: 100%;
+    position: absolute;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 500px;
+    height: 100%;
 }
 .form{
-    margin-top: 300px;
     display: flex;
     flex-direction: column;
 }
 button{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .myButton {
@@ -36,8 +36,3 @@ button{
     top:1px;
 }
 
-@media screen and (max-width: 576px) {
-    .login{
-        padding-bottom: 240px;
-    }
-}

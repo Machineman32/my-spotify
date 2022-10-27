@@ -79,15 +79,15 @@ class Tracks extends React.Component {
                         playlistName
                     }
                 </h1>
-                    <section className="content__wrapper">
+                    <section className="content-wrapper">
 
-                        <section className="section__player">
+                        <section className="section-player">
                             <Player
                                 trackId={this.state.currentTrackId}
                             />
                         </section>
-                        <section className="section__tracks">
-                            <ul className="tracks__wrapper">
+                        <section className="section-player">
+                            <ul className="tracks-wrapper">
                                 { this.state.tracks.map((track, index) => {
 
                                     const isTrackPicked = track.id === this.state.currentTrackId;

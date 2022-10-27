@@ -1,4 +1,4 @@
-.track__wrapper {
+.track-wrapper {
     display: flex;
     flex-direction: row;
 
@@ -9,41 +9,41 @@
     transition: background-color .5s;
 }
 
-.track__wrapper:not(.track__wrapper--selected):hover {
+.track-wrapper:not(.track-wrapper--selected):hover {
     background-color: #ecfcff;
 }
 
-.track__wrapper--selected {
+.track-wrapper--selected {
     background-color: #A46DFF;
 }
 
-.track__main {
+.track-main {
     flex-grow: 1;
 }
 
-.track__main h3 {
+.track-main  h3 {
     font-size: 14px;
     line-height: 17px;
     color: #727272;
     font-weight: bold;
 }
 
-.track__wrapper--selected .track__main h3 {
+.track-wrapper--selected .track-main h3 {
     color: white
 }
 
-.track__wrapper--selected .artist,
-.track__wrapper--selected .track__duration {
+.track-wrapper--selected .artist,
+.track-wrapper--selected .track-duration {
     color: #E4E4E4
 }
 
-.track__duration {
+.track-duration {
 
     margin-left: 10px;
     margin-bottom: 0;
 }
 
-.artist__wrapper {
+.artist-wrapper {
     padding-left: 0;
     list-style: none;
     flex-direction: row;
@@ -56,7 +56,7 @@
 }
 
 .artist,
-.track__duration {
+.track-duration {
     color: #BFBFBF;
     font-size: 12px;
     line-height: 14px;

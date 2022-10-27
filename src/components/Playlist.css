@@ -1,31 +1,44 @@
 .playlists h1{
+    margin-bottom: 100px;
+    font-size: 100px;
+    width: 500px;
+}
+
+.playlist-wrapper {
+    transition-property: transform;
+    transition-duration: 1s;
+    display: flex;
+}
+
+h3, p {
     text-align: center;
 }
 
-.playlist__wrapper {
-    transition-property: transform;
-    transition-duration: 1s;
+.playlist-wrapper > a {
+    text-decoration: none;
 }
 
-.playlist__image {
+.playlist-image {
     width: 200px;
     height: 200px;
 
     border-radius: 12px;
 }
 
-.playlist__title {
+.playlist-title {
     font-size: 20px;
     line-height: 24px;
     font-family: 'Roboto Condensed';
     font-weight: bold;
-
-    margin: 15px 0 8px;
 }
 
-.playlist__description {
+.playlist-description {
     font-size: 12px;
-    line-height: 14px;
+}
+
+.row{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 100px;
 }
 
 .playlist__title,
@@ -33,10 +46,10 @@
     color: #727272;
 }
 
-.playlist__wrapper:hover {
+.playlist-wrapper:hover {
     transform: scale(1.1);
 }
 
-.playlist__wrapper:hover a {
+.playlist-wrapper:hover a {
     text-decoration: none;
 }

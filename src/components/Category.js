@@ -17,8 +17,10 @@ class Category extends React.Component {
                         }
                     }}
                 >
-                    <p>{this.props.name}</p>
-                    <img src={this.props.url} alt={this.props.name}/>
+                    <div className="category-name">
+                        <p id="category-name">{this.props.name}</p>
+                    </div>
+                    <img id='category-img' src={this.props.url} alt={this.props.name}/>
                 </Link>
         );
     }

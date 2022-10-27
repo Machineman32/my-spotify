@@ -1,24 +1,33 @@
+#root{
+    height: 965px
+}
+
 .App{
-    background: #190B1E;
     font-family: Calibri;
     display: flex;
     flex-direction: row;
 }
+
 .mid-wrapper{
     width: 100%;
-    margin-left: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
+    height: 100%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+}
+
+#category-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .nav-bar {
     background: linear-gradient(90deg, rgba(33, 5, 52, 1) 0%, rgba(31, 5, 10, 1) 100%);
     height: 100%;
+    width: 15%;
     position: fixed;
-    padding-right: 10px;
     z-index: 100;
 }
 
@@ -41,6 +50,11 @@ a {
 
 .nav-bar img{
     width: 180px;
+}
+
+.category-name{
+    display: flex;
+    justify-content: center;
 }
 
 .category img:hover{

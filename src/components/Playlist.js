@@ -8,7 +8,7 @@ class Playlist extends React.Component {
     render() {
 
         return (
-            <div className="col-2 playlist__wrapper">
+            <div className="playlist-wrapper">
                 <Link
                     to={{
                         pathname: `/playlists/${this.props.id}`,
@@ -21,14 +21,14 @@ class Playlist extends React.Component {
                         <img
                             src={this.props.image}
                             alt={`Playlist ${this.props.name}`}
-                            className="playlist__image"
+                            className="playlist-image"
                         />
-                        <h3 className="playlist__title">
+                        <h3 className="playlist-title">
                             {
                                 this.props.name
                             }
                         </h3>
-                        <p className="playlist__description">
+                        <p className="playlist-description">
                             {
                                 this.props.desc
                             }

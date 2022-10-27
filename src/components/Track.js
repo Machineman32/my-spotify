@@ -10,14 +10,14 @@ const Track = (props) => {
                 onClick={(event) => {
                     props.pickTrack(props.id);
                 }}
-                className={"track__wrapper " + ( props.isTrackPicked ? 'track__wrapper--selected' : '')}
+                className={"track-wrapper " + ( props.isTrackPicked ? 'track-wrapper--selected' : '')}
             >
-                <section className="track__main">
+                <section className="track-main">
                     <h3>
                         { props.name }
                     </h3>
                     <section>
-                        <ol className="artist__wrapper">
+                        <ol className="artist-wrapper">
                             {
                                 props.artists.map(artist => {
                                     return (
@@ -30,7 +30,7 @@ const Track = (props) => {
                         </ol>
                     </section>
                 </section>
-                <p className="track__duration">
+                <p className="track-duration">
                     {
                         props.duration.toFixed(2)
                     }
