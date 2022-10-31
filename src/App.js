@@ -18,7 +18,6 @@ function App() {
               <ErrorBoundary>
                   <Navbar
                   />
-                  <div className="mid-wrapper">
                           <Switch>
                               <Route
                                   path="//"
@@ -45,7 +44,6 @@ function App() {
                                   component={SpotifyCallback}
                               />
                           </Switch>
-                  </div>
               </ErrorBoundary>
           </div>
   );

@@ -1,12 +1,9 @@
 .login{
-    background:linear-gradient(45deg, #2F1C53, #A46DFF, #F6D1FD);
-    display: flex;
+    z-index: 2;
     width: 100%;
-    position: absolute;
-    flex-direction: column;
+    display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 .form{
     display: flex;

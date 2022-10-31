@@ -74,13 +74,7 @@ class Tracks extends React.Component {
 
         return (
             <div className="player-wrapper">
-                <h1>
-                    {
-                        playlistName
-                    }
-                </h1>
                     <section className="content-wrapper">
-
                         <section className="section-player">
                             <Player
                                 trackId={this.state.currentTrackId}

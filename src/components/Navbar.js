@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import myspotify from '../images/myspotify.png'
+import myspotify from '../pages/myspotify.png'
 
 const Navbar = () => {
 

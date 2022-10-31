@@ -98,7 +98,9 @@ class Categories extends React.Component {
                     path={`${this.props.match.path}*`}
                 >
                     {
-                        categoriesSection
+                        <div className="mid-wrapper">
+                            {categoriesSection}
+                        </div>
                     }
                 </Route>
             </Switch>
